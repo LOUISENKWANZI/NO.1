@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hosanna Secondary School - Home</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+
+<body>
+    <header>
+        <h1>HOSANNA SECONDARY SCHOOL</h1>
+        <p>Excellence in Education and Character Development</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="map" class="location">
+            <h2>Our Location</h2>
+            <p>Hosanna Secondary School<br>
+            P.O. Box 12345, Kampala<br>
+            Wakiso District, Central Region<br>
+            Uganda</p>
+            
+            <!-- Embedded Google Map -->
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?..." width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </section>
+        
+        <section class="contact-details">
+            <h2>Contact Information</h2>
+            <div class="contact-methods">
+                <div>
+                    <h3>Phone</h3>
+                    <p>Office: +256 414 123456<br>
+                    Headteacher: +256 772 123456</p>
+                </div>
+                <div>
+                    <h3>Email</h3>
+                    <p>info@hosannasec.ac.ug<br>
+                    admissions@hosannasec.ac.ug</p>
+                </div>
+                <div>
+                    <h3>Office Hours</h3>
+                    <p>Monday-Friday: 8:00am - 5:00pm<br>
+                    Saturday: 9:00am - 1:00pm</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="submit_form.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <select id="subject" name="subject">
+                        <option value="admission">Admission Inquiry</option>
+                        <option value="academic">Academic Matters</option>
+                        <option value="general">General Inquiry</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        
+        <section class="download-prospectus">
+            <h2>School Prospectus</h2>
+            <p>Download our comprehensive school prospectus to learn more about our programs, facilities, and values.</p>
+            <a href="#" class="download-btn">Download Prospectus (PDF)</a>
+        </section>
+    </main>
+    
+    <footer>
+        <!-- Same footer as home page -->
+    </footer>
+</body>
+</html>
